@@ -9,13 +9,50 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView{
+            VStack{
+                
+                Image("Santa")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 3000, height: 150)
+                
+                
+                
+                
+                Text("Write a Letter To Santa")
+                          .font(.title)
+                    .fontWeight(.heavy)
+                    .foregroundColor(Color.red)
+                
+                
+                Spacer()
+                
+                
+                NavigationLink(destination: Gift()){
+                    Image("Start")
+                        .resizable()
+                        .scaledToFit()
+                        .padding()
+                    
+                    
+                }
+                
+            }
+            
+            
+            
+            
+            
+        }
     }
+    
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
