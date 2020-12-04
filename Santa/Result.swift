@@ -9,13 +9,13 @@ import SwiftUI
 
 struct Result: View {
     var body: some View {
-        Image("Thank You")
-            .resizable()
-            .frame(width: 300.0, height: 280.0)
-            .scaledToFit()
-        
-        
-            
+        VStack{
+            Image("Thank You")
+                .resizable()
+                .frame(width: 300.0, height: 280.0)
+                .scaledToFit()
+            Spacer()
+        }
     }
 }
 

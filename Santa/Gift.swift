@@ -11,11 +11,12 @@ struct Gift: View {
     var body: some View {
         VStack{
             List{
-                ForEach(0..<10){ num in 
-                    NavigationLink(destination: Text("Hello")){
-                        Text("Index")
-                    }
+                NavigationLink(destination: For_who() ){
+                    Text("Ask For some Gift!")
                 }
+                
+                
+                
             }
         }
         

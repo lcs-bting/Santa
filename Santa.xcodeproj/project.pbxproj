@@ -14,6 +14,7 @@
 		A5A3D39725792F6D0094A72D /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D39625792F6D0094A72D /* Gift.swift */; };
 		A5A3D39A2579BEDD0094A72D /* For who.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D3992579BEDD0094A72D /* For who.swift */; };
 		A5A3D39D2579C8E20094A72D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D39C2579C8E20094A72D /* Result.swift */; };
+		A5A3D3A1257A96DA0094A72D /* Number Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D3A0257A96DA0094A72D /* Number Generator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A5A3D39625792F6D0094A72D /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		A5A3D3992579BEDD0094A72D /* For who.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "For who.swift"; sourceTree = "<group>"; };
 		A5A3D39C2579C8E20094A72D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		A5A3D3A0257A96DA0094A72D /* Number Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Number Generator.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A5A3D39625792F6D0094A72D /* Gift.swift */,
 				A5A3D3992579BEDD0094A72D /* For who.swift */,
 				A5A3D39C2579C8E20094A72D /* Result.swift */,
+				A5A3D3A0257A96DA0094A72D /* Number Generator.swift */,
 			);
 			path = Santa;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				A5A3D39A2579BEDD0094A72D /* For who.swift in Sources */,
 				A5A3D3892579254D0094A72D /* ContentView.swift in Sources */,
 				A5A3D3872579254D0094A72D /* SantaApp.swift in Sources */,
+				A5A3D3A1257A96DA0094A72D /* Number Generator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

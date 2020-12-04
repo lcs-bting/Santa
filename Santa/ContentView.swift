@@ -28,7 +28,7 @@ struct ContentView: View {
                 Spacer()
                 
                 
-                NavigationLink(destination: Gift()){
+                NavigationLink(destination: Number_Generator()){
                     Image("Start")
                         .resizable()
                         .scaledToFit()

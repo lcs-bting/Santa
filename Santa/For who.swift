@@ -15,7 +15,7 @@ struct For_who: View {
     var body: some View {
         VStack{
             
-            Text("Ask0 Gifts From Santa!")
+            Text("Ask Gifts From Santa!")
                 .font(.largeTitle)
                 .fontWeight(.bold)
             
@@ -27,10 +27,10 @@ struct For_who: View {
                     
                 }
                 
-                Spacer()
+
                 
                 Section{
-                    TextField("What do you want from Santa and what do you want to say?", text: $theUsersLetter)
+                    TextField("What do you want from Santa?", text: $theUsersLetter)
                         .padding(.horizontal, 25.0)
                 }
             }
