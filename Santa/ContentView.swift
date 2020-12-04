@@ -18,10 +18,9 @@ struct ContentView: View {
                     .frame(width: 3000, height: 150)
                 
                 
-                
-                
+                            
                 Text("Write a Letter To Santa")
-                          .font(.title)
+                    .font(.title)
                     .fontWeight(.heavy)
                     .foregroundColor(Color.red)
                 

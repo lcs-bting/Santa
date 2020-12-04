@@ -12,6 +12,8 @@
 		A5A3D38B2579255B0094A72D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A3D38A2579255B0094A72D /* Assets.xcassets */; };
 		A5A3D38E2579255B0094A72D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A3D38D2579255B0094A72D /* Preview Assets.xcassets */; };
 		A5A3D39725792F6D0094A72D /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D39625792F6D0094A72D /* Gift.swift */; };
+		A5A3D39A2579BEDD0094A72D /* For who.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D3992579BEDD0094A72D /* For who.swift */; };
+		A5A3D39D2579C8E20094A72D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3D39C2579C8E20094A72D /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		A5A3D38D2579255B0094A72D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A5A3D38F2579255B0094A72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5A3D39625792F6D0094A72D /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
+		A5A3D3992579BEDD0094A72D /* For who.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "For who.swift"; sourceTree = "<group>"; };
+		A5A3D39C2579C8E20094A72D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				A5A3D38F2579255B0094A72D /* Info.plist */,
 				A5A3D38C2579255B0094A72D /* Preview Content */,
 				A5A3D39625792F6D0094A72D /* Gift.swift */,
+				A5A3D3992579BEDD0094A72D /* For who.swift */,
+				A5A3D39C2579C8E20094A72D /* Result.swift */,
 			);
 			path = Santa;
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5A3D39725792F6D0094A72D /* Gift.swift in Sources */,
+				A5A3D39D2579C8E20094A72D /* Result.swift in Sources */,
+				A5A3D39A2579BEDD0094A72D /* For who.swift in Sources */,
 				A5A3D3892579254D0094A72D /* ContentView.swift in Sources */,
 				A5A3D3872579254D0094A72D /* SantaApp.swift in Sources */,
 			);

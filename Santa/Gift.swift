@@ -13,7 +13,7 @@ struct Gift: View {
             List{
                 ForEach(0..<10){ num in 
                     NavigationLink(destination: Text("Hello")){
-                        Text("Hello")
+                        Text("Index")
                     }
                 }
             }
