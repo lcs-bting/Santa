@@ -15,6 +15,11 @@ struct Result: View {
                 .frame(width: 300.0, height: 280.0)
                 .scaledToFit()
             Spacer()
+            
+            NavigationLink(
+                destination: ContentView()){
+                Text("Back to home")
+            }
         }
     }
 }
