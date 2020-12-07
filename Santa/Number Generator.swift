@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Number_Generator: View {
     @State private var randomNum = Int.random(in: 90..<100)
+    @State private var tries = 2
     
     var body: some View {
         
@@ -26,14 +27,22 @@ struct Number_Generator: View {
                 .fontWeight(.heavy)
                 .frame(width: 100.0, height: 100.0)
             
-            Button(action: {
-                getNewNumber()
-            }) {
-                Image("Try")
-                    .resizable()
-                    .padding(.horizontal)
-                    .scaledToFit()
+            Text("You have \(tries) tries left")
+            
+            if tries != 0 {
+                Button(action: {
+                    getNewNumber()
+                }) {
+                    Image("Try")
+                        .resizable()
+                        .padding(.horizontal)
+                        .scaledToFit()
+                }
+            } else {
+                Text("You have no more tries left")
             }
+
+            
             
             Spacer()
             
@@ -49,6 +58,7 @@ struct Number_Generator: View {
     }
     func getNewNumber() {
         randomNum = Int.random(in: 90..<100)
+    tries -= 1
     }
 }
 
