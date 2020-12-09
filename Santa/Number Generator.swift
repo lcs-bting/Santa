@@ -9,7 +9,8 @@ import SwiftUI
 
 struct Number_Generator: View {
     @State private var randomNum = Int.random(in: 90..<100)
-    @State private var tries = 2
+    @State private var tries = 1
+    @Binding var rootIsActive : Bool
     
     var body: some View {
         
@@ -46,11 +47,12 @@ struct Number_Generator: View {
             
             Spacer()
             
-            NavigationLink(destination: For_who()){
+            NavigationLink(destination: For_who(rootIsActive: $rootIsActive)){
                 Text("Next")
                 
                 
             }
+            .isDetailLink(false)
             
             
         }
@@ -65,7 +67,7 @@ struct Number_Generator: View {
 
 struct Number_Generator_Previews: PreviewProvider {
     static var previews: some View {
-        Number_Generator()
+        Number_Generator(rootIsActive: .constant(false))
     }
 }
 

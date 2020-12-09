@@ -11,6 +11,7 @@ struct For_who: View {
     // The user's name
     @State private var theUsersName = ""
     @State private var theUsersLetter = ""
+    @Binding var rootIsActive : Bool
     
     var body: some View {
         
@@ -40,9 +41,10 @@ struct For_who: View {
             }
             
             NavigationLink(
-                destination: Result()){
+                destination: Result(shouldPopToRootView: $rootIsActive)) {
                 Text("Next")
             }
+            .isDetailLink(false)
             
             
             
@@ -54,7 +56,7 @@ struct For_who: View {
 
 struct For_who_Previews: PreviewProvider {
     static var previews: some View {
-        For_who()
+        For_who(rootIsActive: .constant(false))
     }
 }
 

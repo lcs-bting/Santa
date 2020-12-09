@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var isActive = false
     var body: some View {
         NavigationView{
             VStack{
@@ -31,7 +32,7 @@ struct ContentView: View {
                     .resizable()
                     .scaledToFit()
                 
-                NavigationLink(destination: Number_Generator()){
+                NavigationLink(destination: Number_Generator(rootIsActive: $isActive), isActive: $isActive){
                     Image("Start")
                         .resizable()
                         .scaledToFit()
@@ -39,6 +40,7 @@ struct ContentView: View {
                     
                     
                 }
+                .isDetailLink(false)
                 
             }
             

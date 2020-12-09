@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Result: View {
+    @Binding var shouldPopToRootView : Bool
+    
     var body: some View {
         VStack{
             Image("Thank You")
@@ -16,16 +18,20 @@ struct Result: View {
                 .scaledToFit()
             Spacer()
             
-            NavigationLink(
-                destination: ContentView()){
-                Text("Back to home")
-            }
+            Button(action: {
+                print("about to pop to root view")
+                shouldPopToRootView = false
+                print("popped to root view")
+            }, label: {
+                Text("Go to home")
+            })
+            
         }
     }
 }
 
 struct Result_Previews: PreviewProvider {
     static var previews: some View {
-        Result()
+        Result(shouldPopToRootView: .constant(false))
     }
 }
