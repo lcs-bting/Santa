@@ -18,6 +18,13 @@ struct Result: View {
                 .scaledToFit()
             Spacer()
             
+            Text("Your letter has been sent")
+                .font(.title)
+                .fontWeight(.heavy)
+                .padding(.horizontal)
+            
+            Spacer()
+            
             Button(action: {
                 print("about to pop to root view")
                 shouldPopToRootView = false
