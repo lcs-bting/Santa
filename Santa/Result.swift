@@ -23,7 +23,7 @@ struct Result: View {
                 shouldPopToRootView = false
                 print("popped to root view")
             }, label: {
-                Text("Go to home")
+                Text("Back to home")
             })
             
         }

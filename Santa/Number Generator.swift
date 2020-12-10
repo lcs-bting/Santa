@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Number_Generator: View {
-    @State private var randomNum = Int.random(in: 90..<100)
+    @State private var randomNum = Int.random(in: 85..<100)
     @State private var tries = 1
     @Binding var rootIsActive : Bool
     
@@ -17,7 +17,7 @@ struct Number_Generator: View {
         VStack {
             
             Text("Are You Being a Good Kid?")
-                .font(.title)
+                .font(.largeTitle)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
             
@@ -47,6 +47,13 @@ struct Number_Generator: View {
             
             Spacer()
             
+            Text("Santa never talks to a kid who has a score under 85%")
+                .font(.title)
+                .fontWeight(.light)
+                .padding(.horizontal)
+            
+            Spacer()
+            
             NavigationLink(destination: For_who(rootIsActive: $rootIsActive)){
                 Text("Next")
                 
@@ -59,7 +66,7 @@ struct Number_Generator: View {
         
     }
     func getNewNumber() {
-        randomNum = Int.random(in: 90..<100)
+        randomNum = Int.random(in: 85..<100)
     tries -= 1
     }
 }
