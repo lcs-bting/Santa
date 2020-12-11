@@ -30,7 +30,10 @@ struct Result: View {
                 shouldPopToRootView = false
                 print("popped to root view")
             }, label: {
-                Text("Back to home")
+                Image("back to home")
+                    .resizable()
+                    .padding(.horizontal)
+                    .scaledToFit()
             })
             
         }
